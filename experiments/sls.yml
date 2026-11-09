@@ -1,0 +1,18 @@
+# This file was edited by CloudBees Feature Management
+type: experiment
+flag: sls
+conditions:
+  - property:
+      propertyConditions:
+        - operator: in-array
+          property: platform.controller
+          operand:
+            - zzz
+        - operator: in-array
+          property: platform.action_name
+          operand:
+            - qwe
+            - aaa
+    acrossTypesLogicGate: or
+    value: true
+value: false
